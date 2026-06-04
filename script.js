@@ -1,7 +1,7 @@
 const variants = {
   user: {
-    label: 'Твой порядок',
-    caption: 'YNOT Shell in the original folder order: product, detail, video moment, packaging/process and final material shots.',
+    caption: 'A raw pass through the current YNOT Shell material: product, detail, motion, package and process cues. #industrialdesign #iphonecase',
+    likes: '12,804 others',
     slides: [
       ['../figma-export-small/user/01.jpg', ''],
       ['../figma-export-small/user/02.jpg', ''],
@@ -13,8 +13,8 @@ const variants = {
     ],
   },
   codex: {
-    label: 'Codex cut',
-    caption: 'YNOT Shell turns an iPhone case into a machined design object: stainless steel, exposed structure, and a look that feels closer to industrial design than accessory.',
+    caption: 'YNOT Shell turns an iPhone case into a machined design object: stainless steel, exposed structure and a silhouette built for material-obsessed people. #productdesign #everydaycarry',
+    likes: '18,421 others',
     slides: [
       ['../figma-export-small/codex/01.jpg', ''],
       ['../figma-export-small/codex/02.jpg', ''],
@@ -27,8 +27,8 @@ const variants = {
     ],
   },
   claude: {
-    label: 'Claude cut',
-    caption: 'A tighter editorial sequence for cold audiences: fewer production cues, more premium object language and material close-ups.',
+    caption: 'A tighter editorial look at YNOT Shell: less accessory, more sculptural protective object for the iPhone. #designobject #stainlesssteel',
+    likes: '16,093 others',
     slides: [
       ['../figma-export-small/claude/01.jpg', ''],
       ['../figma-export-small/claude/02.jpg', ''],
@@ -47,45 +47,35 @@ let activeSlide = 0;
 const mainSlide = document.getElementById('mainSlide');
 const counter = document.getElementById('counter');
 const captionText = document.getElementById('captionText');
-const thumbs = document.getElementById('thumbs');
+const dots = document.getElementById('dots');
+const likes = document.getElementById('likes');
 
 function render() {
   const variant = variants[activeVariant];
   const [src] = variant.slides[activeSlide];
   mainSlide.src = src;
-  mainSlide.alt = `${variant.label}, кадр ${activeSlide + 1}`;
-  counter.textContent = `${activeSlide + 1} / ${variant.slides.length}`;
+  mainSlide.alt = `YNOT Shell carousel slide ${activeSlide + 1}`;
+  counter.textContent = `${activeSlide + 1}/${variant.slides.length}`;
   captionText.textContent = variant.caption;
+  likes.textContent = variant.likes;
 
-  thumbs.innerHTML = '';
-  variant.slides.forEach(([thumbSrc, tag], index) => {
-    const button = document.createElement('button');
-    button.className = `thumb${index === activeSlide ? ' is-active' : ''}`;
-    button.type = 'button';
-    button.setAttribute('aria-label', `Открыть кадр ${index + 1}`);
-    button.addEventListener('click', () => {
+  dots.innerHTML = '';
+  variant.slides.forEach(([, tag], index) => {
+    const dot = document.createElement('button');
+    dot.type = 'button';
+    dot.className = index === activeSlide ? 'is-active' : '';
+    dot.setAttribute('aria-label', `Go to slide ${index + 1}${tag ? `, ${tag}` : ''}`);
+    dot.addEventListener('click', () => {
       activeSlide = index;
       render();
     });
-
-    const img = document.createElement('img');
-    img.src = thumbSrc;
-    img.alt = '';
-    button.appendChild(img);
-
-    if (tag) {
-      const span = document.createElement('span');
-      span.textContent = tag;
-      button.appendChild(span);
-    }
-
-    thumbs.appendChild(button);
+    dots.appendChild(dot);
   });
 }
 
-document.querySelectorAll('.tab').forEach((button) => {
+document.querySelectorAll('.variant').forEach((button) => {
   button.addEventListener('click', () => {
-    document.querySelectorAll('.tab').forEach((tab) => tab.classList.remove('is-active'));
+    document.querySelectorAll('.variant').forEach((tab) => tab.classList.remove('is-active'));
     button.classList.add('is-active');
     activeVariant = button.dataset.variant;
     activeSlide = 0;
@@ -93,13 +83,13 @@ document.querySelectorAll('.tab').forEach((button) => {
   });
 });
 
-document.querySelector('.arrow--left').addEventListener('click', () => {
+document.querySelector('.nav--prev').addEventListener('click', () => {
   const slides = variants[activeVariant].slides;
   activeSlide = (activeSlide - 1 + slides.length) % slides.length;
   render();
 });
 
-document.querySelector('.arrow--right').addEventListener('click', () => {
+document.querySelector('.nav--next').addEventListener('click', () => {
   const slides = variants[activeVariant].slides;
   activeSlide = (activeSlide + 1) % slides.length;
   render();

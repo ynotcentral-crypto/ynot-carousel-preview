@@ -3,109 +3,98 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>YNOT in Yanko Design Instagram context</title>
+    <title>YNOT Shell in @yankodesign feed</title>
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <main class="page">
-      <header class="intro">
-        <p class="eyebrow">Instagram placement mock</p>
-        <h1>Как карусель YNOT Shell может выглядеть в контексте @yankodesign</h1>
-        <p>Это приближённый макет: интерфейс Instagram + контекст дизайн-медиа Yanko Design, чтобы оценить, насколько материал “садится” в такую ленту.</p>
+    <main class="stage">
+      <header class="stage__header">
+        <p>@yankodesign feed placement</p>
+        <h1>YNOT Shell carousel preview</h1>
       </header>
 
-      <section class="controls" aria-label="Выбор варианта">
-        <button class="tab is-active" data-variant="user">01 · Твой порядок</button>
-        <button class="tab" data-variant="codex">02 · Codex cut</button>
-        <button class="tab" data-variant="claude">03 · Claude cut</button>
-      </section>
+      <section class="phone" aria-label="Instagram post preview">
+        <div class="phone__status">
+          <span>9:41</span>
+          <span class="status-icons">•••</span>
+        </div>
 
-      <section class="instagram-shell">
-        <aside class="profile">
-          <div class="profile__head">
+        <div class="ig-topbar">
+          <span class="brand">Instagram</span>
+          <div class="top-icons">
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <article class="post">
+          <header class="post__head">
             <div class="avatar">YD</div>
-            <div>
-              <div class="handle">yankodesign</div>
-              <div class="meta">Product Design · Innovation · Tech</div>
+            <div class="account">
+              <div class="account__line">
+                <strong>yankodesign</strong>
+                <span class="verified" aria-label="Verified">✓</span>
+              </div>
+              <span>Sponsored</span>
             </div>
-          </div>
+            <button class="more" aria-label="More options">•••</button>
+          </header>
 
-          <div class="stats">
-            <div><strong>5,1K+</strong><span>posts</span></div>
-            <div><strong>1,5M</strong><span>followers</span></div>
-            <div><strong>3,4K</strong><span>following</span></div>
-          </div>
+          <section class="carousel">
+            <button class="nav nav--prev" aria-label="Previous slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+            </button>
+            <img id="mainSlide" src="./figma-export-small/user/01.jpg" alt="YNOT carousel slide">
+            <button class="nav nav--next" aria-label="Next slide">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+            </button>
+            <div id="counter" class="counter">1/7</div>
+          </section>
 
-          <p class="bio">The official Yanko Design page. Award-winning product design publication since 2002.</p>
+          <div id="dots" class="dots" aria-label="Carousel position"></div>
 
-          <div class="story-row">
-            <span>Architecture</span>
-            <span>EDC</span>
-            <span>Tech</span>
-            <span>Wearables</span>
-          </div>
-
-          <div class="grid-preview" aria-label="Пример сетки профиля">
-            <div class="tile tile--phone">Phone<br>concept</div>
-            <div class="tile tile--object">Desk<br>gear</div>
-            <div class="tile tile--case">Case<br>design</div>
-            <div class="tile tile--home">Tiny<br>house</div>
-            <div class="tile tile--watch">Watch<br>drop</div>
-            <div class="tile tile--gear">Outdoor<br>tool</div>
-          </div>
-        </aside>
-
-        <section class="post">
-          <div class="post__bar">
-            <div class="avatar avatar--small">YD</div>
-            <div>
-              <strong>yankodesign</strong>
-              <span>Paid partnership · product design</span>
+          <div class="actions">
+            <div class="actions__left">
+              <button aria-label="Like">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8Z"/></svg>
+              </button>
+              <button aria-label="Comment">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9H13a8.5 8.5 0 0 1 8 8v.5Z"/></svg>
+              </button>
+              <button aria-label="Share">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7Z"/><path d="M22 2 11 13"/></svg>
+              </button>
             </div>
-            <button aria-label="More">...</button>
+            <button aria-label="Save">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21 12 17 5 21V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16Z"/></svg>
+            </button>
           </div>
 
-          <div class="carousel" aria-label="Открытый карусельный пост">
-            <button class="arrow arrow--left" aria-label="Previous">‹</button>
-            <img id="mainSlide" src="./figma-export-small/user/01.jpg" alt="Текущий кадр карусели">
-            <button class="arrow arrow--right" aria-label="Next">›</button>
-            <div id="counter" class="counter">1 / 7</div>
-          </div>
-
-          <div class="post__actions">
-            <span>♡</span>
-            <span>💬</span>
-            <span>↗</span>
-            <span class="save">▢</span>
-          </div>
-
-          <div class="caption">
-            <p><strong>yankodesign</strong> <span id="captionText">YNOT Shell turns an iPhone case into a machined design object: stainless steel, exposed structure, and a look that feels closer to industrial design than accessory.</span></p>
-            <p class="caption__muted">Liked by designers, founders and material-obsessed people</p>
-          </div>
-
-          <div id="thumbs" class="thumbs" aria-label="Миниатюры текущей карусели"></div>
-        </section>
-
-        <aside class="fit">
-          <h2>Ощущение в ленте</h2>
-          <div class="fit-card">
-            <span>Audience match</span>
-            <strong>сильный</strong>
-            <p>Материал, фрезеровка/металл и объектность хорошо попадают в product-design аудиторию.</p>
-          </div>
-          <div class="fit-card">
-            <span>Risk</span>
-            <strong>нужен hook</strong>
-            <p>Без первого сильного кадра пост может выглядеть как обычный аксессуар, а не дизайн-объект.</p>
-          </div>
-          <div class="fit-card">
-            <span>Best cut</span>
-            <strong>Codex cut</strong>
-            <p>Наиболее убедительно держит логику: объект → деталь → материал → доказательство.</p>
-          </div>
-        </aside>
+          <section class="copy">
+            <p class="likes">Liked by <strong>industrialdesign_daily</strong> and <strong id="likes">18,421 others</strong></p>
+            <p class="caption"><strong>yankodesign</strong> <span id="captionText"></span> <button>more</button></p>
+            <p class="comments">View all 146 comments</p>
+            <p class="comment"><strong>designmilk</strong> This feels more like a machined object than a phone case.</p>
+            <p class="comment"><strong>gearpatrol</strong> The exposed screw detail is doing a lot here.</p>
+            <p class="time">2 HOURS AGO</p>
+          </section>
+        </article>
       </section>
+
+      <nav class="variant-switcher" aria-label="Carousel variant">
+        <button class="variant is-active" data-variant="user">
+          <span>01</span>
+          Твой порядок
+        </button>
+        <button class="variant" data-variant="codex">
+          <span>02</span>
+          Codex cut
+        </button>
+        <button class="variant" data-variant="claude">
+          <span>03</span>
+          Claude cut
+        </button>
+      </nav>
     </main>
 
     <script src="./script.js"></script>
