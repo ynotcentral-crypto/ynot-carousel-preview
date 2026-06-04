@@ -1,0 +1,162 @@
+{
+  "user": [
+    {
+      "name": "1.JPG",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/01.jpg",
+      "asset": "user/01.jpg",
+      "bytes": 14302
+    },
+    {
+      "name": "2.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/02.jpg",
+      "asset": "user/02.jpg",
+      "bytes": 15089
+    },
+    {
+      "name": "video.mp4",
+      "type": "video",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/03.jpg",
+      "asset": "user/03.jpg",
+      "bytes": 12270
+    },
+    {
+      "name": "3.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/04.jpg",
+      "asset": "user/04.jpg",
+      "bytes": 17813
+    },
+    {
+      "name": "4.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/05.jpg",
+      "asset": "user/05.jpg",
+      "bytes": 25618
+    },
+    {
+      "name": "5.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/06.jpg",
+      "asset": "user/06.jpg",
+      "bytes": 18258
+    },
+    {
+      "name": "6.CR3.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/user/07.jpg",
+      "asset": "user/07.jpg",
+      "bytes": 9585
+    }
+  ],
+  "codex": [
+    {
+      "name": "YNOT_L_5 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/01.jpg",
+      "asset": "codex/01.jpg",
+      "bytes": 18708
+    },
+    {
+      "name": "YNOT_L_4 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/02.jpg",
+      "asset": "codex/02.jpg",
+      "bytes": 13536
+    },
+    {
+      "name": "1.JPG",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/03.jpg",
+      "asset": "codex/03.jpg",
+      "bytes": 14302
+    },
+    {
+      "name": "YNOT_L_3 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/04.jpg",
+      "asset": "codex/04.jpg",
+      "bytes": 21012
+    },
+    {
+      "name": "5.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/05.jpg",
+      "asset": "codex/05.jpg",
+      "bytes": 18258
+    },
+    {
+      "name": "3.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/06.jpg",
+      "asset": "codex/06.jpg",
+      "bytes": 17813
+    },
+    {
+      "name": "6.CR3.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/07.jpg",
+      "asset": "codex/07.jpg",
+      "bytes": 9585
+    },
+    {
+      "name": "video.mp4",
+      "type": "video",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/codex/08.jpg",
+      "asset": "codex/08.jpg",
+      "bytes": 12270
+    }
+  ],
+  "claude": [
+    {
+      "name": "YNOT_L_5 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/01.jpg",
+      "asset": "claude/01.jpg",
+      "bytes": 18708
+    },
+    {
+      "name": "YNOT_L_2 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/02.jpg",
+      "asset": "claude/02.jpg",
+      "bytes": 20567
+    },
+    {
+      "name": "YNOT_L_1 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/03.jpg",
+      "asset": "claude/03.jpg",
+      "bytes": 15194
+    },
+    {
+      "name": "YNOT_L_3 copy.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/04.jpg",
+      "asset": "claude/04.jpg",
+      "bytes": 21012
+    },
+    {
+      "name": "2.jpg",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/05.jpg",
+      "asset": "claude/05.jpg",
+      "bytes": 15089
+    },
+    {
+      "name": "5.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/06.jpg",
+      "asset": "claude/06.jpg",
+      "bytes": 18258
+    },
+    {
+      "name": "3.png",
+      "type": "image",
+      "file": "/Users/georgiytarzanian/Library/CloudStorage/Dropbox/WORK/YNOT/Marketing/_workroom/instagram-carousel-preview-2026-06-04/figma-export-small/claude/07.jpg",
+      "asset": "claude/07.jpg",
+      "bytes": 17813
+    }
+  ]
+}
