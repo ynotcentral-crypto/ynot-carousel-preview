@@ -293,6 +293,10 @@ button {
   padding: 0;
 }
 
+#captionText {
+  white-space: pre-line;
+}
+
 .comments,
 .time {
   color: var(--muted);
